@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaili.myapplication.MainPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_book"
+        android:id="@+id/tvBook"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_marginTop="35sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etBook"
+        android:inputType="textCapWords"
+        android:layout_alignStart="@+id/tvChapt"
+        android:layout_alignLeft="@+id/tvChapt"
+        android:layout_alignEnd="@+id/tvChapt"
+        android:layout_alignRight="@+id/tvChapt"
+        android:layout_below="@+id/tvBook"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_chapt"
+        android:id="@+id/tvChapt"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/etBook" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etChapt"
+        android:inputType="textCapWords"
+        android:layout_alignStart="@+id/tvChapt"
+        android:layout_alignLeft="@+id/tvChapt"
+        android:layout_alignEnd="@+id/tvChapt"
+        android:layout_alignRight="@+id/tvChapt"
+        android:layout_below="@+id/tvChapt"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_verse"
+        android:id="@+id/tvVerse"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:layout_marginTop="30sp"
+        android:layout_below="@+id/etChapt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etVerse"
+        android:inputType="textCapWords"
+        android:layout_alignStart="@+id/tvChapt"
+        android:layout_alignLeft="@+id/tvChapt"
+        android:layout_alignEnd="@+id/tvChapt"
+        android:layout_alignRight="@+id/tvChapt"
+        android:layout_below="@+id/tvVerse"
+        android:layout_marginTop="15sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnSubmit"
+        android:layout_alignLeft="@+id/etVerse"
+        android:layout_alignStart="@+id/tvChapt"
+        android:layout_alignRight="@+id/tvChapt"
+        android:layout_marginTop="42sp"
+        android:layout_alignEnd="@+id/tvChapt"
+        android:layout_below="@+id/etVerse"
+        android:onClick="createDisplay" />
+</RelativeLayout>

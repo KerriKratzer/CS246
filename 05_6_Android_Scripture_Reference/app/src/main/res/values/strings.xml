@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scripture Reference</string>
+    <string name="header_book">Book</string>
+    <string name="header_chapt">Chapter</string>
+    <string name="header_verse">Verse</string>
+    <string name="submit">SUBMIT</string>
+    <string name="header_display">Your favorite scripture is: </string>
+</resources>
